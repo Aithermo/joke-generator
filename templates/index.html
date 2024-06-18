@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke Generator</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        h1 {
+            color: #007BFF;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        input[type="text"] {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: calc(100% - 22px);
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: calc(100% - 22px);
+            box-sizing: border-box;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        p {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
+            form, p {
+                padding: 15px;
+            }
+            input[type="text"], input[type="submit"] {
+                padding: 10px;
+                width: calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>What should the joke be about?</h1>
+    <form action="generate">
+        <input name="inside" type="text" placeholder="Enter a topic...">
+        <input name="categoryer" type="text" placeholder="Enter a category...">
+        <input type="submit" value="Generate Joke">
+    </form>
+</body>
+</html>
